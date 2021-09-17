@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AINEBYONA AUDREY </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./w3.css">
+    <style>
+
+            body{
+                background-image: url("./wallpaper2.jpg");
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+            }    
+            #sideBar{
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                font-style: sans serif;
+                background-color: #B22222; /*#CD5C5C  indian red; #DC143C	crimson red*/
+                display: grid;
+                grid-template-columns: 30px 200px 30px;
+                grid-template-rows: 30px 200px 30px 2fr 40px 1fr;
+            }
+            
+            #pic{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+                border-radius: 50%;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+            #labels{
+                grid-column: 1 / 4;
+                grid-row: 4 / 5;
+            }
+            #name{
+                font-family: cursive ;
+                color:black;
+                font-size: 23px;
+                font-weight: bolder;
+            }
+            #developer{
+                color:black;
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            #IconContacts{
+                grid-column: 1 / 4;
+                grid-row: 6 / 7;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .icons{
+                padding-left: 10px;
+                padding-right: 10px;
+                color: black;
+            }
+            #intro{
+                grid-row: 1 / 2;
+                grid-column: 2 / 3;
+                display: grid;
+                grid-template-columns: 60px 1fr 40px;
+                grid-template-rows: 30px 2fr 1fr 50px;
+            }
+            #myIntro{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+            #hi{
+                line-height: 200px;
+                font-size: 100px;
+                font-style: oblique;
+                color: cadetblue;
+            }
+            #freelance{
+                line-height: 80px;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: lighter;
+                color: gold;
+            }
+            #buttons{
+                grid-row: 3 / 4;
+                grid-column: 2 / 3;
+            }
+            button{
+                width: 300px;
+                height: 70px;
+                border-radius: 10px;
+                background-color: burlywood;
+                color: black;
+                font-weight: lighter;
+                font-size: 30px;
+            }
+            #button1{
+                margin-bottom: 30px;
+                margin-top: 50px;
+            }
+            #face{
+                display: none;
+            }
+        
+        
+        @media screen and (max-width: 576px) {
+            body{
+                background-image: url("./Data.jpg");
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 60px 1fr;
+            }
+
+            #sideBar{
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                font-style: sans serif;
+                background-color: dimgray; /*#CD5C5C  indian red; #DC143C	crimson red #B22222*/
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 60px;    
+            }
+            #IconContacts{
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }                
+            .icons{
+                padding-left: 30px;
+                padding-right: 30px;
+                color: black;                
+            }
+
+            #intro{
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+                display: grid;
+                grid-template-columns: 60px 1fr 40px;
+                grid-template-rows: 30px 2fr 1fr 50px;                
+            }
+            #pic{
+                display: none;
+            }
+            #labels{
+                display: none;
+            }
+            #hi{
+                font-style: sans serif;
+                color: red;
+            }
+            #face{
+                display: block;
+                
+            }    
+        }
+          
+           
+    </style>
+    
+</head>
+<body>
+    <div id="sideBar">
+        <div id="img2">
+            <img src="./twitterProfile.jpg" alt="" height="200" width="200" id="pic" >
+        </div>
+        <div id="labels">
+            <p id="name" > AINEBYONA AUDREY</p>
+            <p id="developer" >FRONT END DEVELOPER</p>
+
+            <br>
+
+            <h3 id="portfolio" class="w3-text-blue">PORTFOLIO</h3>
+            <h3 id="story" class="w3-text-blue">MY STORY</h3>
+            <h3 id="blog" class="w3-text-blue">PERSONAL BLOG</h3>
+        </div>
+
+        <div id="IconContacts" style="font-size: 40px;"> <!-- Sizing Icons-->
+            <a href="audreyainebyona@gmail.com" class="icons"><i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://twitter.com/@AineHauds" class="icons"><i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="https://facebook.com/Aine Hauds" class="icons"><i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="https://github.com/Ainebyona Audrey" class="icons"><i class="fa fa-github-square"></i>
+            </a>
+        </div>
+        
+    </div>
+    
+    <div id="intro" >
+       
+        <div id="myIntro">
+            <img src="./face1.png" alt="" id="face">
+            <h1 id="hi">Hi, I'm Aine,</h1>
+            <h2 id="freelance">a freelance software developer specialised in front end </h2>
+        </div>
+
+        <div id="buttons">
+            <button id="button1">PORTFOLIO</button>
+            <button>MY OFFER</button>
+        </div>
+
+    </div>
+
+</body>
+    
+</html>
